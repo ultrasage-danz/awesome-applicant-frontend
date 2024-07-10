@@ -1,0 +1,145 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #61dafb;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #61dafb;
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+/* Styles for the input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  transition: border-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50; /* Adjust to desired color */
+}
+
+/* Styles for the buttons */
+button {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.save {
+  background-color: #4CAF50; /* Green color for Save button */
+}
+
+button.cancel {
+  background-color: #f44336; /* Red color for Cancel button */
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.save:hover {
+  background-color: #45a049;
+}
+
+button.cancel:hover {
+  background-color: #e53935;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+/* Remove horizontal line (if any) */
+hr {
+  border: none;
+}
+
+/* Smooth animations */
+.section {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.section-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-leave-active {
+  opacity: 0;
+  transform: translateY(20px);
+}
